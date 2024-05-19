@@ -1,0 +1,9 @@
+{%block body %}
+    <a href="{%url 'myapp:index' %}">go home &larr;</a>
+    <h2>name</h2>
+    {{ object.text }}
+    <h2>information</h2>
+    {{ object.matter }}
+    <h2>image</h2>
+    <img src="{{ object.image.url }}" height="400" width="400" alt="">
+{%endblock %}
